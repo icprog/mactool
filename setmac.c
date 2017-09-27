@@ -141,12 +141,12 @@ int main(void)
         (uint32_t)((wificur >> 16) & 0xff),
         (uint32_t)((wificur >> 8 ) & 0xff),
         (uint32_t)((wificur >> 0 ) & 0xff),
-        (uint32_t)((btcur   >> 40) & 0xff),
-        (uint32_t)((btcur   >> 32) & 0xff),
-        (uint32_t)((btcur   >> 24) & 0xff),
-        (uint32_t)((btcur   >> 16) & 0xff),
+        (uint32_t)((btcur   >> 0 ) & 0xff),
         (uint32_t)((btcur   >> 8 ) & 0xff),
-        (uint32_t)((btcur   >> 0 ) & 0xff));
+        (uint32_t)((btcur   >> 16) & 0xff),
+        (uint32_t)((btcur   >> 24) & 0xff),
+        (uint32_t)((btcur   >> 32) & 0xff),
+        (uint32_t)((btcur   >> 40) & 0xff));
     ret1 = system(cmd);
     if (ret1 == -1) failed = 1;
 
